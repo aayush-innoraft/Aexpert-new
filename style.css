@@ -11,6 +11,7 @@ nav {
   justify-content: center;
   background-color: rgba(246, 246, 246, 255);
 }
+/* container styling  */
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,6 +36,7 @@ nav {
   margin-right: 50px;
   font-size: 41px;
 }
+/* styling links in navbar */
 .links a {
   text-decoration: none;
   color: rgba(0, 121, 132, 255);
@@ -60,7 +62,7 @@ button:hover {
   transition: ease-in-out 0.4s;
   color: white;
 }
-
+/* main section starts  */
 main {
   width: 100%;
   background-color: rgba(246, 246, 246, 255);
@@ -117,7 +119,6 @@ hr {
 
   border: none;
 }
-/* hamberguer starts */
 
 .get {
   width: 75px;
@@ -157,6 +158,7 @@ hr {
   margin-left: 4px;
   margin-top: 9px;
 }
+/* styling boxes  */
 .boxes {
   display: flex;
   padding: 0 50px;
@@ -188,6 +190,7 @@ hr {
   height: 5px;
   border-radius: 25px; /* Simplified redundant radius values */
 }
+/* hovering boxes  */
 .box:hover {
   background-color: #007984;
 }
@@ -197,16 +200,31 @@ hr {
 .box:hover p {
   color: white;
 }
+/* media queries for 1400px display */
 @media (max-width: 1400px) {
   .container {
     max-width: 1140px;
   }
 }
+/* media queries for 1200px display */
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
+  .boxes {
+    position: absolute;
+    bottom: -31%;
+    right: 93px;
+  }
+  .llp {
+    width: 88px;
+    height: 20px;
+    background-color: #f4cc3d;
+    border-radius: 50%;
+    margin-top: 12px;
+  }
 }
+/* media queries for 992px display */
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
@@ -310,7 +328,7 @@ hr {
   }
 }
 
-/* Small Tablets (max-width: 768px) */
+/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -391,7 +409,7 @@ hr {
     color: white;
   }
 }
-/* Mobile Devices (max-width: 576px) */
+/*  (max-width: 576px) */
 @media (max-width: 576px) {
   .navbar {
     font-size: 16px;
