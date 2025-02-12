@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <!-- container for specifying max width  -->
+        <div class="navbar">
+          <div class="ham">
+            <span id="frist"></span>
+            <span id="second"></span>
+            <span id="third"></span>
+          </div>
+          <div class="links">
+            <!-- links -->
+            <a href="#">home</a>
+            <a href="#">how it works</a>
+            <a href="#">blog </a>
+            <a href="#">about</a>
+          </div>
+          <div class="para">
+            <!-- top paragraph  -->
+            <h1><span class="aex">Aex</span><span class="pert">pert</span></h1>
+          </div>
+          <div class="buttons">
+            <!-- right side buttons -->
+            <button>sign in</button>
+            <button>sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- main section  -->
+      <div class="container">
+        <!-- container for specifying max -width  -->
+        <div class="middle">
+          <div class="main">
+            <div class="left">
+              <!-- left div  paragraph  -->
+              <div class="business">
+                <!-- business section  -->
+                <hr />
+                <p class="ptag">business consultant</p>
+              </div>
+              <div class="messages">
+                <!-- messages  -->
+                <h1>
+                  find the solution <br />
+                  with the experts
+                </h1>
+              </div>
+              <div class="paras">
+                <!-- paras  -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  dolorum omnis tempore ipsa consequatur ut enim possimus vel
+                  blanditiis, et alias ipsum! Possimus ea maiores nulla delectus
+                  mollitia aspernatur ad perspiciatis sint.
+                </p>
+              </div>
+              <!-- button  -->
+              <div class="button lower">
+                <!-- lower  button  -->
+                <!-- get started button  -->
+                <button class="button get">Get started</button>
+              </div>
+              <div class="lower-messages">
+                <!-- lower messages  -->
+                <div class="lower-upper">
+                  <!-- p inside lower messages  -->
+                  <p class="rbda">industries</p>
+                  <div class="llp"></div>
+                  <p class="rbda">agriculture</p>
+                  <div class="llp"></div>
+                  <p class="rbda">automotive</p>
+                </div>
+                <!-- lower lower messages  -->
+                <div class="lower-lower">
+                  <p class="rbda">chemical</p>
+                  <div class="llp lll"></div>
+                  <p class="rbda">healthcare</p>
+                  <div class="llp lll"></div>
+                  <p class="rbda">engineering</p>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./image/20250206_111851.jpg" alt="" />
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <h1>700+</h1>
+              <h1>employees</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet lorem</p>
+              <br />
+
+              <div class="yellow"></div>
+            </div>
+            <div class="box">
+              <h1>10+</h1>
+              <h1>years</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet hgfsh hhg</p>
+              <br />
+              <div class="yellow"></div>
+            </div>
+            <div class="box">
+              <h1>12+</h1>
+              <h1>locations</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet lorem</p>
+              <br />
+              <div class="yellow"></div>
+            </div>
+            <div class="box">
+              <h1>100%</h1>
+              <h1>satisfaction</h1>
+              <br />
+              <p>Lorem, ipsum dolor sit amet lorem so far .</p>
+              <br />
+              <div class="yellow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".ham").click(function () {
+          if ($("#frist").hasClass("x1")) {
+            $("#frist").removeClass("x1");
+            $("#second").removeClass("x2");
+            $("#third").removeClass("x3");
+          } else {
+            $("#frist").addClass("x1");
+            $("#second").addClass("x2");
+            $("#third").addClass("x3");
+          }
+          if ($(".links").hasClass("hambergur")) {
+            $(".links").removeClass("hambergur");
+          } else {
+            $(".links").addClass("hambergur");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
